@@ -25,7 +25,7 @@ fun kmpVersion(): String = getKmpVersion()
  * Returns the library version of BontechKMP
  * This version is automatically generated from the Gradle build configuration
  * Update the libraryVersion in build.gradle.kts to change this value
- * @return The library version string (e.g., "1.0.0")
+ * @return The library version string (e.g., "1.0.3")
  */
 fun getLibraryVersion(): String {
     return "1.0.1"

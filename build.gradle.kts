@@ -9,7 +9,7 @@ val kotlinVersion = "1.9.20"
 extra["kotlinVersion"] = kotlinVersion
 
 // Library version - update this when releasing a new version of your library
-val libraryVersion = "1.0.0"
+val libraryVersion = "1.0.3"
 extra["libraryVersion"] = libraryVersion
 
 tasks.register("clean", Delete::class) {
