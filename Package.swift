@@ -1,4 +1,4 @@
-// swift-tools-version: 6.2
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
@@ -14,9 +14,9 @@ let package = Package(
         ),
     ],
     targets: [
-        .target(
+        .binaryTarget(
             name: "BontechKMP",
-            path: "Sources/BontechKMP"
+            path: "BontechKMP.xcframework"
         )
     ]
 )
