@@ -40,6 +40,158 @@
         "moduleName": "BontechKMP"
       },
       {
+        "kind": "Var",
+        "name": "LIBRARY_VERSION",
+        "printedName": "LIBRARY_VERSION",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:10BontechKMP15LIBRARY_VERSIONSSvp",
+        "mangledName": "$s10BontechKMP15LIBRARY_VERSIONSSvp",
+        "moduleName": "BontechKMP",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:10BontechKMP15LIBRARY_VERSIONSSvg",
+            "mangledName": "$s10BontechKMP15LIBRARY_VERSIONSSvg",
+            "moduleName": "BontechKMP",
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "getKmpVersion",
+        "printedName": "getKmpVersion()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10BontechKMP13getKmpVersionSSyF",
+        "mangledName": "$s10BontechKMP13getKmpVersionSSyF",
+        "moduleName": "BontechKMP",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "getLibraryVersion",
+        "printedName": "getLibraryVersion()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10BontechKMP17getLibraryVersionSSyF",
+        "mangledName": "$s10BontechKMP17getLibraryVersionSSyF",
+        "moduleName": "BontechKMP",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "kmpVersion",
+        "printedName": "kmpVersion()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10BontechKMP10kmpVersionSSyF",
+        "mangledName": "$s10BontechKMP10kmpVersionSSyF",
+        "moduleName": "BontechKMP",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "libraryVersion",
+        "printedName": "libraryVersion()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10BontechKMP14libraryVersionSSyF",
+        "mangledName": "$s10BontechKMP14libraryVersionSSyF",
+        "moduleName": "BontechKMP",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "version",
+        "printedName": "version()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:10BontechKMP7versionSSyF",
+        "mangledName": "$s10BontechKMP7versionSSyF",
+        "moduleName": "BontechKMP",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BontechKMP"
+      },
+      {
         "kind": "TypeDecl",
         "name": "SkieSwiftOptionalMutableSharedFlow",
         "printedName": "SkieSwiftOptionalMutableSharedFlow",

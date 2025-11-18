@@ -9,6 +9,14 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public func getPlatform() -> any BontechKMP.Platform
+public var LIBRARY_VERSION: Swift.String {
+  get
+}
+public func getKmpVersion() -> Swift.String
+public func getLibraryVersion() -> Swift.String
+public func kmpVersion() -> Swift.String
+public func libraryVersion() -> Swift.String
+public func version() -> Swift.String
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
   public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T?>
   public typealias Element = T?

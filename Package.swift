@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BontechKMP",
-            path: "BontechKMP.xcframework"
+            path: "./BontechKMP.xcframework"
         )
     ]
 )

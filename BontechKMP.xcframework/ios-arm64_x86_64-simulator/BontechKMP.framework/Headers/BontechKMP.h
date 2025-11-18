@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class BKMPBase, BKMPMutableSet<E>, BKMPMutableDictionary<K, V>, BKMPNumber, BKMPByte, BKMPUByte, BKMPShort, BKMPUShort, BKMPInt, BKMPUInt, BKMPLong, BKMPULong, BKMPFloat, BKMPDouble, BKMPBoolean, BKMPKotlinCancellationException, BKMPKotlinIllegalStateException, BKMPKotlinRuntimeException, BKMPKotlinException, BKMPKotlinThrowable, BKMPKotlinArray<T>, BKMPSkieColdFlowIterator<E>, BKMPSkieKotlinFlow<T>, BKMPSkieKotlinMutableSharedFlow<T>, BKMPSkieKotlinMutableStateFlow<T>, BKMPSkieKotlinOptionalFlow<T>, BKMPSkieKotlinOptionalMutableSharedFlow<T>, BKMPSkieKotlinOptionalMutableStateFlow<T>, BKMPSkieKotlinOptionalSharedFlow<T>, BKMPSkieKotlinOptionalStateFlow<T>, BKMPSkieKotlinSharedFlow<T>, BKMPSkieKotlinStateFlow<T>, BKMPSkie_CancellationHandler, BKMPSkie_SuspendHandler, BKMPSkie_SuspendResult, BKMPSkie_SuspendResultCanceled, BKMPSkie_SuspendResultError, BKMPSkie_SuspendResultSuccess, BKMPGreeting, BKMPIOSPlatform, BKMPPlatform_iosKt, BKMP__SkieSuspendWrappersKt, BKMP__SkieTypeExportsKt, NSObject, NSError, NSString, NSArray<E>, NSMutableArray<E>, NSSet<E>, NSDictionary<K, V>, NSMutableSet, NSMutableDictionary, NSNumber;
+@class BKMPBase, BKMPMutableSet<E>, BKMPMutableDictionary<K, V>, BKMPNumber, BKMPByte, BKMPUByte, BKMPShort, BKMPUShort, BKMPInt, BKMPUInt, BKMPLong, BKMPULong, BKMPFloat, BKMPDouble, BKMPBoolean, BKMPKotlinCancellationException, BKMPKotlinIllegalStateException, BKMPKotlinRuntimeException, BKMPKotlinException, BKMPKotlinThrowable, BKMPKotlinArray<T>, BKMPSkieColdFlowIterator<E>, BKMPSkieKotlinFlow<T>, BKMPSkieKotlinMutableSharedFlow<T>, BKMPSkieKotlinMutableStateFlow<T>, BKMPSkieKotlinOptionalFlow<T>, BKMPSkieKotlinOptionalMutableSharedFlow<T>, BKMPSkieKotlinOptionalMutableStateFlow<T>, BKMPSkieKotlinOptionalSharedFlow<T>, BKMPSkieKotlinOptionalStateFlow<T>, BKMPSkieKotlinSharedFlow<T>, BKMPSkieKotlinStateFlow<T>, BKMPSkie_CancellationHandler, BKMPSkie_SuspendHandler, BKMPSkie_SuspendResult, BKMPSkie_SuspendResultCanceled, BKMPSkie_SuspendResultError, BKMPSkie_SuspendResultSuccess, BKMPGreeting, BKMPIOSPlatform, BKMPVersionKt, BKMPPlatform_iosKt, BKMP__SkieSuspendWrappersKt, BKMP__SkieTypeExportsKt, NSObject, NSError, NSString, NSArray<E>, NSMutableArray<E>, NSSet<E>, NSDictionary<K, V>, NSMutableSet, NSMutableDictionary, NSNumber;
 
 @protocol BKMPKotlinIterator, BKMPSkie_DispatcherDelegate, BKMPKotlinx_coroutines_coreFlow, BKMPKotlinx_coroutines_coreMutableSharedFlow, BKMPKotlinx_coroutines_coreSharedFlow, BKMPKotlinx_coroutines_coreFlowCollector, BKMPKotlinx_coroutines_coreMutableStateFlow, BKMPKotlinx_coroutines_coreStateFlow, BKMPKotlinx_coroutines_coreRunnable, BKMPPlatform, NSCopying;
 
@@ -504,6 +504,17 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Platform_iosKt")))
 @interface BKMPPlatform_iosKt : BKMPBase
 + (id<BKMPPlatform>)getPlatform __attribute__((swift_name("getPlatform()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("VersionKt")))
+@interface BKMPVersionKt : BKMPBase
+@property (class, readonly) NSString *LIBRARY_VERSION __attribute__((swift_name("LIBRARY_VERSION")));
++ (NSString *)getKmpVersion __attribute__((swift_name("getKmpVersion()")));
++ (NSString *)getLibraryVersion __attribute__((swift_name("getLibraryVersion()")));
++ (NSString *)kmpVersion __attribute__((swift_name("kmpVersion()")));
++ (NSString *)libraryVersion __attribute__((swift_name("libraryVersion()")));
++ (NSString *)version __attribute__((swift_name("version()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
