@@ -11,7 +11,7 @@ local.properties
 
 # Kotlin Native
 *.framework
-*.xcframework
+# *.xcframework - Commented out to include the built XCFramework in the repo
 
 # Gradle
 .gradle/
