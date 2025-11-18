@@ -28,7 +28,7 @@ fun kmpVersion(): String = getKmpVersion()
  * @return The library version string (e.g., "1.0.0")
  */
 fun getLibraryVersion(): String {
-    return "1.0.0"
+    return "1.0.1"
 }
 
 /**
