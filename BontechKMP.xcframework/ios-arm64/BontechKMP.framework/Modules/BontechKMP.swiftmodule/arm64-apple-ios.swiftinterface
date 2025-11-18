@@ -1,3 +1,734 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a513565c258e44b52ac42e3dbeefbaf5d55457b31620ffc632b281c27ed53f89
-size 53099
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name BontechKMP
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+@_exported import BontechKMP
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public func getPlatform() -> any BontechKMP.Platform
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
+  final public var subscriptionCount: BontechKMP.SkieSwiftStateFlow<BontechKMP.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T?>
+  #endif
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinOptionalFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T?>
+  #endif
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftOptionalFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftOptionalFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = BontechKMP.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = BontechKMP.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = BontechKMP.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = BontechKMP.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = BontechKMP.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = BontechKMP.Skie_SuspendResult
+      public enum Canceled {
+        public typealias __Kotlin = BontechKMP.Skie_SuspendResult.Canceled
+      }
+      public enum Error {
+        public typealias __Kotlin = BontechKMP.Skie_SuspendResult.Error
+      }
+      public enum Success {
+        public typealias __Kotlin = BontechKMP.Skie_SuspendResult.Success
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = BontechKMP.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = BontechKMP.Kotlinx_coroutines_coreFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = BontechKMP.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = BontechKMP.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = BontechKMP.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = BontechKMP.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = BontechKMP.Kotlinx_coroutines_coreRunnable
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = BontechKMP.Skie.KotlinxCoroutinesCore
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public var value: T {
+    get
+  }
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftStateFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftStateFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftStateFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftStateFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftFlow<T>) -> BontechKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftSharedFlow<T>) -> BontechKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftFlow<T>) -> BontechKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftSharedFlow<T>) -> BontechKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+}
+extension BontechKMP.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension BontechKMP.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinSharedFlow<T>(_ flow: BontechKMP.SkieSwiftSharedFlow<T>) -> BontechKMP.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: BontechKMP.SkieSwiftSharedFlow<T>) -> BontechKMP.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+}
+extension BontechKMP.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension BontechKMP.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinMutableSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+}
+extension BontechKMP.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+}
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>) -> BontechKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+extension BontechKMP.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+public func SkieKotlinStateFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinStateFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+}
+extension BontechKMP.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalStateFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>) -> BontechKMP.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: BontechKMP.SkieSwiftStateFlow<T>) -> BontechKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>) -> BontechKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension BontechKMP.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableStateFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinMutableStateFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+}
+extension BontechKMP.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>) -> BontechKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension BontechKMP.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension BontechKMP.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: BontechKMP.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>)
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var value: T? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T?>
+  #endif
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftOptionalStateFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalStateFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalStateFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftOptionalStateFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftSharedFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftSharedFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftSharedFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftSharedFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
+  final public var subscriptionCount: BontechKMP.SkieSwiftStateFlow<BontechKMP.KotlinInt> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var value: T? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T?>
+  #endif
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalMutableStateFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftOptionalMutableStateFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T?>
+  #endif
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftOptionalSharedFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftOptionalSharedFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: BontechKMP.SkieSwiftStateFlow<BontechKMP.KotlinInt> {
+    get
+  }
+  final public func resetReplayCache()
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftMutableSharedFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftMutableSharedFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftMutableSharedFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftMutableSharedFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : _Concurrency.AsyncSequence, Swift._ObjectiveCBridgeable {
+  public typealias AsyncIterator = BontechKMP.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = BontechKMP.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public var replayCache: [T] {
+    get
+  }
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public var subscriptionCount: BontechKMP.SkieSwiftStateFlow<BontechKMP.KotlinInt> {
+    get
+  }
+  final public var value: T {
+    get
+    set
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  final public func makeAsyncIterator() -> BontechKMP.SkieSwiftFlowIterator<T>
+  final public func _bridgeToObjectiveC() -> BontechKMP.SkieSwiftMutableStateFlow<T>._ObjectiveCType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftMutableStateFlow<T>._ObjectiveCType, result: inout BontechKMP.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: BontechKMP.SkieSwiftMutableStateFlow<T>._ObjectiveCType?) -> BontechKMP.SkieSwiftMutableStateFlow<T>
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+extension BontechKMP.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(BontechKMP.Skie_SuspendResult.Canceled)
+    case error(BontechKMP.Skie_SuspendResult.Error)
+    case success(BontechKMP.Skie_SuspendResult.Success)
+    public static func == (a: BontechKMP.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: BontechKMP.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> BontechKMP.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : BontechKMP.Skie_SuspendResult
+#if compiler(>=5.3) && $NonescapableTypes
+public func onEnum<__Sealed>(of sealed: __Sealed?) -> BontechKMP.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : BontechKMP.Skie_SuspendResult
+#endif
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  public typealias Element = T
+  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func next() async -> BontechKMP.SkieSwiftFlowIterator<T>.Element?
+  #endif
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+}
+extension BontechKMP.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: BontechKMP.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: BontechKMP.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: BontechKMP.SkieColdFlowIterator<E>) -> BontechKMP.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension BontechKMP.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> BontechKMP.KotlinBoolean
+}
+extension BontechKMP.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+  #endif
+}
+extension BontechKMP.Kotlinx_coroutines_coreFlow {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any BontechKMP.Kotlinx_coroutines_coreFlowCollector) async throws
+}
