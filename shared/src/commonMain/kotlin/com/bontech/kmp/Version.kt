@@ -4,7 +4,7 @@ package com.bontech.kmp
  * Library version constant - accessible directly from Swift
  * This version is automatically generated from the Gradle build configuration
  */
-val LIBRARY_VERSION = "1.0.0"
+val LIBRARY_VERSION = "1.0.2"
 
 /**
  * Returns the Kotlin Multiplatform (KMP) version used in this library
