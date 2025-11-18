@@ -12,7 +12,7 @@ val LIBRARY_VERSION = "1.0.0"
  * @return The KMP version string (e.g., "1.9.20")
  */
 fun getKmpVersion(): String {
-    return "1.9.20"
+    return "1.9.21"
 }
 
 /**
